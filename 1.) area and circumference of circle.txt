@@ -1,0 +1,14 @@
+// Online C compiler to run C program online
+//code to print area and circumference of circle
+#include <stdio.h>
+
+int main() {
+    float radius, area, circum;
+    printf("Enter Radius of Circle : ");
+    scanf("%f", &radius);
+    area = 3.14 * radius * radius;
+    circum = 2 * 3.14 * radius;
+    printf("\nArea of Circle is %.2f",area);
+    printf("\nCircumference of Circle is %.3f",circum);
+    return 0;
+}
