@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+//program to calculate total and average marks
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int m1,m2,m3,m4,m5,total;
+    float per;
+    printf("\nEnter Marks of 5 Subjects : ");
+    scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+    total = m1 + m2 + m3 + m4 + m5;
+    per = total / 5.0;
+    printf("\nTotal Marks %d",total);
+    printf("\nPercentage Marks %.2f",per);
+    return 0;
+}
