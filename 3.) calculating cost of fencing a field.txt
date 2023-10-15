@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+//to calculate cost of fencing a field
+
+#include <stdio.h>
+
+int main() 
+{
+    int len, br, per, cost,tcost;
+    printf("\nEnter Length & Breadth : ");
+    scanf("%d %d", &len, &br);
+    per = 2 * (len+br);
+    printf("\nEnter Per Meter Cost of Fencing : ");
+    scanf("%d",&cost);
+    printf("\nTotal Fencing Require is for : %d meters",per);
+    tcost = per * cost;
+    printf("\nTotal Cost of Fencing is : %d", tcost);
+
+    return 0;
+}
