@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+//calculating shopping bill & discount
+#include <stdio.h>
+
+int main() {
+    int cost,qty,amt, disc, netamt,gst,finamt;
+    printf("Enter Cost and Quantity of Product : ");
+    scanf("%d %d", &cost, &qty);
+    amt = cost * qty;
+    disc =  amt / 10;
+    netamt = amt - disc;
+    gst = netamt * 0.08;
+    finamt = netamt + gst;
+    printf("\nAmount is %d", amt);
+    printf("\nDiscount is %d",disc);
+    printf("\nNet Amount : %d",netamt);
+    printf("\nGST is : %d",gst);
+
+    printf("\nPayable Amount : %d",finamt);
+
+    return 0;
+}
