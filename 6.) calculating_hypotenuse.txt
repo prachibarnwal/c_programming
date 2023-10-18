@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+//calculating hypotenuse of a Right-Angled Triangle
+#include <stdio.h>
+#include<math.h>
+int main() {
+    // Write C code here
+    //printf("Hello world");
+    float b,a,h;
+    printf("Enter Base & Altitude of Triangle : ");
+    scanf("%f %f", &b, &a);
+    h = sqrt(b * b + a * a);
+    printf("Hypotenuse is : %.2f",h);
+    
+    return 0;
+}
