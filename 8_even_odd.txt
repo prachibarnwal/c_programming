@@ -1,0 +1,16 @@
+/* Online C Compiler and Editor */
+//to check whether a number is even or odd ~_~~
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello, World!\n");
+    int num;
+    printf("Enter a Number : ");
+    scanf("%d",&num);
+    if(num % 2 == 0)
+        printf("%d is Even !!",num);
+    else
+        printf("%d is Odd !! ",num);
+    return 0;
+}
