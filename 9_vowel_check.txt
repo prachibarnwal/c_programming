@@ -1,0 +1,22 @@
+/* Online C Compiler and Editor */
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello, World!\n");
+    char val;
+    printf("Enter The Character : ");
+    scanf("%c",&val);
+    if((val >= 'a' && val <= 'z') || (val >= 'A' && val <= 'Z'))
+    {
+        if(val >= 'A' && val <= 'Z')
+            val += 32;
+        if(val == 'a' || val == 'e' || val == 'i' || val == 'o' || val == 'u')
+            printf("\nIt's a Vowel !!");
+        else
+            printf("It's a Consonant !!");
+    }
+    else
+        printf("Not an Alphabet !!");
+    return 0;
+}
