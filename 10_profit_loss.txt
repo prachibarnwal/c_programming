@@ -1,0 +1,25 @@
+/* Online C Compiler and Editor */
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello, World!\n");
+    int cp,sp,abc;
+    printf("Enter the Cost Price : ");
+    scanf("%d",&cp);
+    printf("Enter the Selling Price : ");
+    scanf("%d",&sp);
+    if(sp > cp)
+    {
+        abc = sp - cp;
+        printf("Profit is : %d",abc);
+    }
+    else if(sp == cp)
+        printf("\nNo Profit | No Loss !!");
+    else
+    {
+        abc = cp - sp;
+        printf("\nLoss is : %d",abc);
+    }
+    return 0;
+}
