@@ -1,0 +1,21 @@
+/* Online C Compiler and Editor */
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello, World!\n");
+    int per;
+    printf("Enter Precentage Marks : ");
+    scanf("%d", &per);
+    if(per >= 90)
+    printf("\nGrade is A+ !!");
+    else if(per >= 80)
+    printf("\nGrade is A !!");
+    else if(per >= 60)
+    printf("\nGrade is B !!");
+    else if(per >= 50)
+    printf("\nGrade is C !!");
+    else
+    printf("Beta Tum Firse Paper Deke Aao >_<");
+    return 0;
+}
