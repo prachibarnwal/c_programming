@@ -1,0 +1,49 @@
+/* Online C Compiler and Editor */
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello,World!\n");
+    int r,c;
+    printf("Enter Number of Rows and Columns : ");
+    scanf("%d %d", &r, &c);
+    int m[r][c], n[r][c], x[r][c];
+    printf("Enter Matrix Elements : ");
+    for(int i = 0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            scanf("%d", &m[i][j]);
+    }
+    printf("Enter Another Matrix Elements : ");
+    for(int i = 0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            scanf("%d", &n[i][j]);
+    }
+    printf("1st Matrix Elements are : \n");
+    for(int i =0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            printf("%5d", m[i][j]);
+        printf("\n");
+    }
+    printf("2nd Matrix Elements are : \n");
+    for(int i =0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            printf("%5d", n[i][j]);
+        printf("\n");
+    }
+    printf("Sum of Entered Matrix is : \n");
+    for(int i = 0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+        {
+            x[i][j] = m[i][j] + n[i][j];
+            printf("%5d",x[i][j]);
+        }
+        printf("\n");
+        
+    }
+    return 0;
+}
