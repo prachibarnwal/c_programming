@@ -1,0 +1,38 @@
+/*
+to input a square matrix and find sum of diagonal elements of the matrix
+*/
+#include <stdio.h>
+int main()
+{
+    int r,c;
+    printf("\nEnter Number of Rows and Columns for a Square Matrix : ");
+    scanf("%d %d", &r, &c);
+    if(r == c){
+    int m[r][c];
+    printf("Enter Matrix Elements : ");
+    for(int i = 0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            scanf("%d", &m[i][j]);
+    }
+    printf("Matrix Elements are : \n");
+    for(int i =0;i<r;i++)
+    {
+        for(int j = 0;j<c;j++)
+            printf("%5d", m[i][j]);
+        printf("\n");
+    }
+    int sum = 0;
+    for(int i = 0;i<c;i++)
+    {
+        for(int j = 0;j<r;j++)
+            if( i == j)
+                sum += m[i][j];
+    }
+    printf("\nSum of Diagonal Elements is : %d\n", sum);
+    }
+    else
+        printf("\nIt's Not a Square Matrix");
+
+    return 0;
+}
